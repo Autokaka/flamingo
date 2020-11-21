@@ -1,8 +1,8 @@
-name: flamingo_core
-description: Flamingo core.
+name: dart_ast_gen
+description: A lightweight Dart AST generator.
 version: 0.0.1
 author: Autokaka
-homepage: https://github.com/Autokaka/flamingo/flamingo_core
+homepage: https://github.com/Autokaka/flamingo/dart_ast_gen
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

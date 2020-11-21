@@ -1,4 +1,4 @@
-library flamingo_core;
+library dart_ast_gen;
 
 /// A Calculator.
 class Calculator {

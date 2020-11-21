@@ -1,6 +1,6 @@
-# flamingo_core
+# dart_ast_gen
 
-A lightweight Dart interpreter.
+Dart language AST generator.
 
 ## Getting Started
 
