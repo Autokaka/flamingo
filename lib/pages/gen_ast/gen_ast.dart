@@ -14,8 +14,8 @@ class _GenASTPageState extends State<GenASTPage> {
 
   Future<void> loadDartAST() async {
     dartCode = await rootBundle.loadString('assets/code/demo.dart');
-    codeAST = await DartRuntimeDebugger.getASTMap(dartCode);
-    codeResult = await DartInterpreter.run(dartCode);
+    codeAST = DartCompiler.compile(dartCode);
+    // codeResult = await DartInterpreter.run(dartCode);
     setState(() {});
   }
 
@@ -33,7 +33,7 @@ class _GenASTPageState extends State<GenASTPage> {
       ),
       body: ListView(
         children: [
-          Text(dartCode),
+          Text(dartCode.trim()),
           Divider(color: Colors.blue),
           Text(debugEncode(codeAST)),
         ],

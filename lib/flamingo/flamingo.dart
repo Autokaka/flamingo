@@ -6,8 +6,7 @@ import 'package:analyzer/dart/analysis/utilities.dart';
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/ast/visitor.dart';
 
-part 'debugger.dart';
-part 'interpreter.dart';
+part 'compiler.dart';
 
 String debugEncode(dynamic json, {int indent = 4}) {
   var spaces = ' ' * indent;
